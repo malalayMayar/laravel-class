@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// public pages routes
+Route::get('/about', function () {
+    return 'This is notes route';
+});
+
+Route::get('/contact-us', function () {
+    return 'This is contact-us route';
+});
+
+Route::put('/update', function () {
+    return 'The user has been updated';
+});
